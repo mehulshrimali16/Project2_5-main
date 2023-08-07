@@ -37,7 +37,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Sun -->
     <ImageView
         android:id="@+id/sunImageView"
         android:layout_width="100dp"
@@ -49,7 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/todo" />
 
-    <!-- Birds -->
     <ImageView
         android:id="@+id/bird1ImageView"
         android:layout_width="wrap_content"
@@ -68,7 +66,6 @@
         app:layout_constraintEnd_toEndOf="@id/cloudImageView"
         app:layout_constraintTop_toTopOf="@id/cloudImageView" />
 
-    <!-- Cloud -->
     <ImageView
         android:id="@+id/cloudImageView"
         android:layout_width="match_parent"

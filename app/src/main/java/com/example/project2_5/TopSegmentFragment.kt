@@ -43,7 +43,6 @@ class TopSegmentFragment : Fragment() {
             resetToInitialState()
         }
 
-        // Start the animation for sun and birds initially
         animateSunAndBirds()
     }
 
@@ -72,7 +71,6 @@ class TopSegmentFragment : Fragment() {
         mediaPlayer?.start()
 
         mediaPlayer?.setOnCompletionListener {
-            // Restart the music for loop playback
             mediaPlayer?.start()
         }
     }
@@ -84,7 +82,6 @@ class TopSegmentFragment : Fragment() {
     }
 
     private fun animateSunAndBirds() {
-        // Sun animation: Move from left to right and continue from right to left
         val sunAnimation = TranslateAnimation(
             Animation.RELATIVE_TO_PARENT, -1.0f,
             Animation.RELATIVE_TO_PARENT, 1.0f,
@@ -96,7 +93,6 @@ class TopSegmentFragment : Fragment() {
         sunAnimation.duration = 8000 // Adjust the duration as needed
         binding.sunImageView.startAnimation(sunAnimation)
 
-        // Birds animation: Move from left to right and continue from right to left
         val birdAnimation1 = TranslateAnimation(
             Animation.RELATIVE_TO_PARENT, -1.0f,
             Animation.RELATIVE_TO_PARENT, 1.0f,
